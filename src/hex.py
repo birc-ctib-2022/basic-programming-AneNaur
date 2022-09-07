@@ -16,7 +16,7 @@ match command:
         for i in range(len(x)):
             n=hex(ord(x[i]))
             y.append(n)
-        encoding = " ".join(y)
+        encoding = "".join(y)
         print(encoding)
 
     case "decode":
@@ -25,5 +25,5 @@ match command:
         for i in range(len(number)):
             m=chr(int(i, base=16))
             x.append(m)
-        decoding = " ".join(x)
+        decoding = "".join(x)
         print(decoding)

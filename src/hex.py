@@ -21,9 +21,9 @@ match command:
 
     case "decode":
         number=encoding.split("0x")
-        x=[]
+        z=[]
         for i in range(len(number)):
             m=chr(int(i, base=16))
-            x.append(m)
+            z.append(m)
         decoding = "".join(x)
         print(decoding)

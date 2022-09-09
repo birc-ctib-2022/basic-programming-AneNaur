@@ -41,18 +41,20 @@ if len(sys.argv) < 2:
 
 match sys.argv[1]:
     case "mean":
-        # put your solution to the first exercise here
-        mean = "mean of x"
+        mean = sum(x)/len(x)
         print(mean)
 
     case "times":
-        # Put your solution to the second exercise here
         times_three = []
+        for i in range(len(x)):
+            times_three.append(x[i]*3)
         print_list(times_three)
 
     case "even":
-        # Put your solution to the third exercise here
         even = []
+        for i in range(len(x)):
+            if x[i]%2==0:
+                even.append(x[i])
         print_list(even)
 
     case _:

@@ -12,11 +12,10 @@ command, x = sys.argv[1:3]
 
 match command:
     case "encode":
-        # Implement the encoding here
-        encoding = ""
+        encoding = "".join(hex(ord(c)) for c in x)
         print(encoding)
 
     case "decode":
-        # Implement the decoding here
-        decoding = ""
+#        number=encoding.split("0x") #Når vi splitter, får man alt på venstre side af det vi splitter efter, så hvis "encoding" starter med "0x" får vi en tom streng som vores første plads i "number".
+        decoding = "".join([chr(int(n, base=16)) for n in x.split("0x")[1:]])
         print(decoding)

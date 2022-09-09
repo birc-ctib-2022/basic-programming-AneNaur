@@ -5,3 +5,11 @@
 while True:
     if input("Do you want to stop? ") == "yes":
         break
+
+# Så længe if-statement er false, skal den blive ved med at gentage, 
+# men så snart if-statement er true, skal den stoppe/break.
+#
+# You can also do this:
+#ans=""
+#while ans != "yes":
+#    ans = input("Do you want to stop? ")

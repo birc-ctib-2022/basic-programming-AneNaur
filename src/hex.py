@@ -16,6 +16,6 @@ match command:
         print(encoding)
 
     case "decode":
-        number=encoding.split("0x")
-        decoding = "".join(chr(int(n, base=16)) for n in number)
+        number=encoding.split("0x") #Når vi splitter, får man alt på venstre side af det vi splitter efter, så hvis "encoding" starter med "0x" får vi en tom streng som vores første plads i "number".
+        decoding = "".join(chr(int(n, base=16)) for n in range(1:len(number))
         print(decoding)

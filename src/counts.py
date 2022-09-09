@@ -11,7 +11,7 @@ count = {}
 for i in range(len(x)):
     char=x[i]
     if char not in count:
-        x[char]=1
+        count[char]=1
     else:
         count[char]+=1
 
